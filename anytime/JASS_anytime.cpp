@@ -58,7 +58,7 @@ auto parameters = std::make_tuple						///< The  command line parameter block
 	(
 	JASS::commandline::parameter("-?", "--help",      "Print this help.", parameter_help),
 	JASS::commandline::parameter("-q", "--queryfile", "<filename>        Name of file containing a list of queries (1 per line, each line prefixed with query-id)", parameter_queryfilename),
-	JASS::commandline::parameter("-a", "--asciiparser ", "use simple query parser (ASCII seperated pre-casefolded tokens)", parameter_ascii_query_parser),
+	JASS::commandline::parameter("-a", "--asciiparser", "use simple query parser (ASCII seperated pre-casefolded tokens)", parameter_ascii_query_parser),
 	JASS::commandline::parameter("-t", "--threads",   "<threadcount>     Number of threads to use (one query per thread) [default = -t1]", parameter_threads),
 	JASS::commandline::parameter("-k", "--top-k",     "<top-k>           Number of results to return to the user (top-k value) [default = -k10]", parameter_top_k),
 	JASS::commandline::parameter("-r", "--rho",       "<integer_percent> Percent of the collection size to use as max number of postings to process [default = -r100] (overrides -RHO)", rho),
